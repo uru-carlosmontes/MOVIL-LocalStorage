@@ -1,0 +1,12 @@
+<section>
+    <input type="text" ng-model="user.name"><br>
+    <input type="text" ng-model="user.lastname"><br>
+    <button ng-click="addUser()">ADD</button> <br> 
+    <button ng-click="showUser()">SHOW</button>
+    <ion-list>
+        <ion-item ng-repeat="user in users">
+            <h3>{{user.name}}</h3>
+            <h3>{{user.lastname}}</h3>
+        </ion-item>
+    </ion-list>
+</section>
